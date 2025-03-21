@@ -24,7 +24,7 @@ BIGCOMMERCE_ACCESS_TOKEN = os.getenv("BIGCOMMERCE_ACCESS_TOKEN")
 BASE_URL = f"https://api.bigcommerce.com/stores/{BIGCOMMERCE_STORE_HASH}/v3"
 
 # Fetch product details
-@app.get("/products")
+@app.get("/")
 def get_products():
     headers = {
         "X-Auth-Token": BIGCOMMERCE_ACCESS_TOKEN,
